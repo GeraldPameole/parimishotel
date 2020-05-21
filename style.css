@@ -1,0 +1,383 @@
+/*Dimmensionnement de la page*/
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+
+body {
+	display : table;
+	width: 100%;
+}
+/*Main*/
+main{
+  background-color: papayawhip;
+}
+
+/*Footer*/
+footer {
+	display : table-row;
+  height: 100px; 
+  font-size:0.8em;
+  background-color: #391335;
+  color: goldenrod;
+}
+.fil-ariane{
+  display: contents;
+  text-align: center;
+  color: goldenrod;
+}
+.form-control {
+  display: flex;
+  margin:0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+#cgu{
+  display: flex;
+  margin:0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+/*Header*/
+.container-fluid{
+  justify-content: space-around ;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.container{
+  list-style: none;
+}
+
+/*MAIN*/
+
+
+
+/*NAV et RESPONSIVE DESIGN*/
+nav{
+  width:100%;
+  background-color: #391335;
+  align-items: center;
+}
+
+nav> ul{
+  margin:0px;
+  padding:0px;
+}
+
+nav li{
+  list-style-type: none;
+  font-family: 'Old Standard TT', serif; 
+}
+
+nav> ul> li{
+  float:left;
+  position: relative;
+}
+
+nav> ul::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+.sous-menu{
+  display: none;
+}
+
+nav input[type=checkbox]{
+  display: none;
+}
+
+nav label{
+  display: none;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav> ul> li> a{
+  padding: 20px 30px;
+  color:#FFF;
+}
+
+nav> ul>li:hover a{
+  padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .sous-menu{
+  display: inline-block;
+  position: absolute;
+  top:100%;
+  left:0px;
+  padding:0px;
+  z-index:1000;
+}
+
+.sous-menu li a{
+  padding: 15px 30px;
+  font-size:13px;
+  color:#222538;
+  width: 270px;
+}
+
+.sous-menu li{
+  border-bottom:1px solid #391335;
+}
+
+.menu-hotel:hover{
+  border-top:5px solid goldenrod;
+  background-color: RGBa (228, 77, 38, 0.15);
+}
+
+.menu-chambres:hover{
+  border-top:5px solid goldenrod;
+  background-color: RGBa (228, 77, 38, 0.15);
+}
+
+.menu-restaurant:hover{
+  border-top:5px solid goldenrod;
+  background-color: RGBa (228, 77, 38, 0.15);
+}
+
+.menu-spa:hover{
+  border-top:5px solid goldenrod;
+  background-color: RGBa (228, 77, 38, 0.15);
+}
+
+.menu-restaurant:hover{
+  border-top:5px solid goldenrod;
+  background-color: RGBa (220, 220, 220, 0.15);
+}
+
+.menu-hotel .sous-menu{
+  background-color: gold;
+}
+
+.menu-chambres .sous-menu{
+  background-color: gold;
+}
+
+.menu-spa .sous-menu{
+  background-color: gold;
+}
+
+.menu-restaurant .sous-menu{
+  background-color: gold;
+}
+.sous-menu li:hover a{
+  color: #391335;
+  font-weight: bold;
+}
+
+.menu-hotel .sous-menu li:hover{
+  background-color:paleturquoise;
+}
+
+.menu-chambres .sous-menu li:hover{
+  background-color: paleturquoise;
+}
+
+.menu-spa .sous-menu li:hover{
+  color:goldenrod;
+  background-color: paleturquoise;
+}
+
+.menu-restaurant .sous-menu li:hover{
+  background-color: paleturquoise;
+}
+nav input[type=checkbox]:checked ~ ul{
+  display: block;
+}
+
+@media screen and (max-width:780px){
+  .menu-mobile{
+    display: block;
+    color: #391335;
+    background-color: goldenrod;
+    text-align: center;
+    padding:12px 0px;
+  }
+  nav ul{
+    display: none;
+  }
+  nav ul li, nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a, nav ul li:hover a{
+    padding: 10px 0px;
+  }
+  nav li:hover .sous-menu{
+    display: block;
+    position: static;
+  }
+}
+
+/*img responsive*/
+img{
+
+height: auto;
+align-content: center;
+}
+/* .d-block{
+  width:720px;
+height: 300px;
+} */
+
+/**************Accueil********************/
+
+
+.container{
+  text-align: center;
+  align-content: center;/**/
+  box-sizing:border-box;  
+  color: goldenrod;
+   margin:auto;
+   padding: 5px;
+   font-size: 1em;
+   /* border: solid 1px goldenrod;ajuster à chaque container ou sous container */
+}
+
+h1, h3{
+  text-align: center;
+  color:goldenrod;
+  background-color: #391335;
+  box-sizing:center;
+  border: solid 1px goldenrod;
+ align-self: auto;
+ margin: 10px auto;
+font-family:'Tangerine', cursive;
+}
+
+h2{
+  font-family:'Old Standard TT', serif;
+}
+h5{
+  text-align: center;
+  font-family: 'Old Standard TT', serif; 
+  background-color: #003147;
+}
+
+p{
+font-size: 1em;
+margin: 10px auto;
+text-justify: auto;
+font-family: 'Old Standard TT', serif; 
+width:70%;
+text-align: center;
+justify-content: center;
+color: goldenrod;
+}
+
+#description{
+font-family: 'Old Standard TT', serif; 
+color: goldenrod;
+width:70%;
+text-justify: auto;
+text-align: justify;
+}
+
+.acces-container{
+background-image: url("../img/hotel_wallpaper.png");
+  background-attachment: fixed;
+}
+
+.map{
+  box-sizing: content-box;
+  border: solid 1px goldenrod;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:50%;
+  }
+
+.presse{
+  display: inline;
+  align-items: flex-start ;
+
+}
+
+.form{
+  display: flex;
+  align-items: flex-start;
+}
+#datepicker{
+  display: inline;
+}
+
+/********CHAMBRES**********/
+.room-container{
+  display:inline-flex;
+  justify-content: center;
+  margin:auto;
+}
+#classicRooms,#confortRooms,#deluxeRooms,#suite{
+  background-color: #003147;
+}
+
+/********restaurant**********/
+.container{
+display: flex;
+padding: 30px; 
+justify-content:space-between;
+align-content: center;
+align-items: center;  
+    }
+
+.card{
+margin:10px ;
+padding:20px;
+width: 100%;
+height:auto;
+border:solid 1px goldenrod; 
+font-family: 'Old Standard TT', serif; 
+background-color: #391335;
+}
+.text-center{
+  background-color: #391335;
+}
+
+.li{
+  font-size: 2em;
+  font-family: 'Old Standard TT', serif; 
+
+}
+/* .restaurant{
+  align-items: flex-start ;
+} */
+
+.menu{
+  text-decoration: underline;
+}
+
+.collapse{
+  border:solid 1px goldenrod;
+}
+
+/* SPA */
+.btn{
+  background-color: #391335;
+}
+
+
